@@ -1,0 +1,55 @@
+Git User:
+Evon726
+mdasifkarimevon@gmail.com
+
+git init
+git status
+git add . ( Add all file at tracking state)
+git commit -m "message"
+git commit -m "message" -m "description"
+git log 
+
+
+git reset HEAD~1 <1 is the head index>
+	Delete the commit but keep the file also all file in untracking state.
+	
+git reset --soft HEAD~1 <1 is the head index>
+	Delete the commit but keep the file also all file in tracking state.
+	
+git reset --herd HEAD~1 <1 is the head index>
+	Delete the commit also all file or Changes belong this commit.
+	
+git rebase -i HEAD~N <N is the head index>
+	reword = Edit only commit message
+	edit   = edit the file with the old commit you choose to edit.
+
+
+ssh-keygen -t rsa -C "your-email@example.com"
+	-t rsa: Modern, more secure key type (recommended)
+	-C: A label, usually your email
+	
+🔁 5. Test the Connection
+	ssh -T git@github.com
+
+git init
+git branch -M main        #Rename default branch to main due to now git-hub default branch name main.
+git remote add origine <remote repository URL>
+
+git add .
+git commit -m "Initial commit"
+git push -u origin main
+
+🧪 To Check if It's Connected
+	git remote -v
+	
+	devlopment	git@github.com:Evon726/dev_ops.git (fetch)
+	devlopment	git@github.com:Evon726/dev_ops.git (push)
+
+	
+✅ Done!
+Now your local Git repo is connected to GitHub. You can continue using:
+    git push to upload changes
+    	git push devlopment main 
+    	git push devlopment main --force  #Any change the  file and --amend any commit then push using --force
+    git pull to get updates
+    	git pull <name you want> <branch name>
